@@ -28,7 +28,7 @@ jobs:
     - name: Easy Zip Files
       uses: vimtor/action-zip@v1
       with:
-        files: ./namnam/namnam/bin/Debug/net5.0
+        files: ./namnam/namnam/bin/Debug/net5.0/publish/
         recursive: false
         dest: result.zip
 
