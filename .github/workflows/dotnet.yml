@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore ./namnam/namnam.sln
+      run: dotnet restore .namnam.sln
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal ./namnam/namnam.sln
+      run: dotnet test --no-build --verbosity normal ./namnam.sln
