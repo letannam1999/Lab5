@@ -25,6 +25,11 @@ jobs:
       run: dotnet test --no-build --verbosity normal ./namnam/namnam.sln
     - name: Publish
       run: dotnet publish ./namnam/namnam/namnam.csproj
-    - name: Azure DevOps NPM
-      uses: ponicode/azure-devops-npm-action@1.0.0
+    - name: Easy Zip Files
+      uses: vimtor/action-zip@v1
+      with:
+        files: ./namnam/namnam/bin/Debug/net5.0
+        recursive: false
+        dest: result.zip
+
 
