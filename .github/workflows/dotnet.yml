@@ -24,4 +24,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal ./namnam/namnam.sln
     - name: Publish
-      run: dotnet publish ~/namnam/namnam/namnam.csproj
+      run: dotnet publish ~/namnam/namnam.sln
