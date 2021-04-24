@@ -31,3 +31,7 @@ jobs:
         files: ./namnam/namnam/bin/Debug/net5.0/publish/
         recursive: false
         dest: result.zip
+    - uses: actions/upload-artifact@v1
+      with:
+        name: my-artifact
+        path: ${{ github.workspace }}/result.zip
