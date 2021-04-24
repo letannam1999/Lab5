@@ -31,5 +31,3 @@ jobs:
         files: ./namnam/namnam/bin/Debug/net5.0/publish/
         recursive: false
         dest: result.zip
-
-
