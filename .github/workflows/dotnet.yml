@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./namnam/namnam.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore ./namnam/namnam.sln
     - name: Test
       run: dotnet test --no-build --verbosity normal ./namnam/namnam.sln
